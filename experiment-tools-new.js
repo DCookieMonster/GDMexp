@@ -94,7 +94,7 @@ function servlog(key, value){
 	m_aLogger[m_aLogger.length]=[key,value];
 }
 
-function saveTheLog (){
+function saveTheLog(){
 	for (var i = m_aLogger.length - 1; i >= 0; i--) {
 		alert(m_aLogger[i][0]+":"+m_aLogger[i][1]);
 		logger(m_aLogger[i][0],m_aLogger[i][1]);

@@ -24,6 +24,7 @@
 	user-select: none;
 }
 
+small.italic {font-style:italic;}
 
 #tball-con{
 	height: 300px; 

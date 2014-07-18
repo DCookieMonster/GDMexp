@@ -467,7 +467,7 @@ function enableFrame() {
 function drawOrder() {
     if (E.chosenOrder == -1){
         E.chosenOrder = getRandomInt(0, 5);
-        servlog("order",E.chosenOrder);
+        servlog("chosenorder",E.chosenOrder);
     }
 }
 
@@ -740,6 +740,7 @@ function onContinue() {
             servlog("voteOwnExp", explanationVote)
 
             if (onContinue.curPage == 14) {
+                saveTheLog();
                 finalizeExperiment();
                 show_page_final()
             }
