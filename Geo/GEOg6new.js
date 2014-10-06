@@ -1,6 +1,6 @@
 logger_url = "../logger/logger.py"
 bgu_url = "http://hdm.ise.bgu.ac.il/GEO-3/GDMVisualizationTestPage.html"
-experiment ="GEO-EXP56-correctFirst"
+experiment ="GEO-3"
 
 var exper = {} //TODO integraate exper in E
 E = {}
@@ -34,8 +34,7 @@ $(document).ready(function() {
 
 
 function getRandomInt (min, max) {
-   // return Math.floor(Math.random() * (max - min + 1)) + min;
-   return 0;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 
@@ -496,8 +495,10 @@ function enableFrame() {
 
 function drawOrder()
 {
-	if (E.chosenOrder == -1)
+	if (E.chosenOrder == -1){
 		E.chosenOrder = getRandomInt(0, 5);
+		servlog("chosenOrder",E.chosenOrder);
+	}
 }
 
 function show_group()
