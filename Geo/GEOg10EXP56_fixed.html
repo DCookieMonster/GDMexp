@@ -6,7 +6,7 @@
     <script type="text/javascript" src="../experiment-tools-new.js"></script>
     <script type="text/javascript" src="../browserid.js"></script>
 
-    <script type="text/javascript" src="GEOg9.js"></script>
+    <script type="text/javascript" src="GEOg11.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../experiment-style.css" />
     <link rel="stylesheet" type="text/css" href="GEO.css" />
@@ -146,7 +146,7 @@
             </p>
             <h3>The Goal</h3>
             <p>
-                A player wins the game by choosing such that the other player is ìstuckî at a dead end, that is, there are no vertices that can be chosen.
+                A player wins the game by choosing such that the other player is ‚Äústuck‚Äù at a dead end, that is, there are no vertices that can be chosen.
             </p>
             <p>
                 <b>An example of a situation where the player Green won: </b>
@@ -163,7 +163,7 @@ When blue arrows appear, it is your opponent's turn.
 
             <p>The player whose turn to play is displayed at the bottom.</p>
             <p>
-                The image shows a phase of the game when it is the opponentís turn to choose a vertex (the blue player)
+                The image shows a phase of the game when it is the opponent‚Äôs turn to choose a vertex (the blue player)
 
 
             </p>
@@ -189,7 +189,7 @@ When blue arrows appear, it is your opponent's turn.&nbsp;
 
 
             <p>
-                At any stage, you can backtrack as many steps as you want by clicking the "UNDO MOVEì button, or by clicking on the vertex you selected last.
+                At any stage, you can backtrack as many steps as you want by clicking the "UNDO MOVE‚Äú button, or by clicking on the vertex you selected last.
             </p>
             <img src="images/tutorial/undo.png" alt="geo0" align="center">
 
@@ -208,7 +208,7 @@ When blue arrows appear, it is your opponent's turn.&nbsp;
                 The solution will be presented by displaying the first vertex that was chosen by the participant. You can use the interface in order to examine the proposed solution and decide whether it is correct.
             </p>
             <p>
-                The interface is not automatically reset and it will display the graph at the last state from your solution. You can reset the graph by clicking the ìresetî button or undoing your previous moves as described earlier.
+                The interface is not automatically reset and it will display the graph at the last state from your solution. You can reset the graph by clicking the ‚Äúreset‚Äù button or undoing your previous moves as described earlier.
             </p>
             
              <h3>Your payment:</h3>
@@ -241,7 +241,7 @@ When blue arrows appear, it is your opponent's turn.&nbsp;
                 <input type="radio" name="quiz2" value="a">Green<br>
                 <input type="radio" name="quiz2" value="b">Blue<br>
             </p>
-            <p><b>(3) What will happen if you push the "UNDO MOVEî button in the game shown below? </b></p>
+            <p><b>(3) What will happen if you push the "UNDO MOVE‚Äù button in the game shown below? </b></p>
             <img src="images/quiz/GEO_0.jpg" height="300">
             <p>
 
@@ -262,7 +262,11 @@ When blue arrows appear, it is your opponent's turn.&nbsp;
 
         </div>
     </div>
-
+<div id="exam" class="page" align="center" style="text-align: center;">        
+    <b>Please examine the proposed solution below and vote whether you think it is correct.<br>
+                Remember, a correct solution is the first move that will lead to victory regardless of the other player's choice.  </b><br>
+                <br>
+            </div>
     <div id="experiment" class="page">
         <div id="expDesc">
             <h2>Your task is to find the first winning move </h2>
@@ -304,16 +308,7 @@ When blue arrows appear, it is your opponent's turn.&nbsp;
 
         </div>
     </div>
-    <div id="voteDescC" class="page" align="center" style="text-align: center">
-        <h2>Voting</h2>
-        <br>
-        <b>Please examine your proposed solution, shown below, and vote whether you think it is correct.<br>
-            Remember, a correct solution is the first move that will lead to victory regardless of the other player's choice. </b>
-        <br>
-        <br>
-        <b>Timer:<span id="timer3"></span></b>
-        <br>
-    </div>
+ 
     <div id="explainSol" class="page">
 
 
@@ -333,10 +328,16 @@ When blue arrows appear, it is your opponent's turn.&nbsp;
         </div>
 
 
+    </div>   <div id="voteDescC" class="page" align="center" style="text-align: center">
+        
     </div>
     <div id="solOwnCho" class="page" style="text-align: center">
         <p><b>Your Solution Was: <b><span id="own">.</span></b></b></p>
         <br>
+                <b>Timer:<span id="timer3"></span></b>
+<br>
+
+        <b>Your Vote: The solution is </b><br>
         <input type="radio" name="ownVote" value="correct">Correct.<br>
         <input type="radio" name="ownVote" value="incorrect">Incorrect<br>
     </div>
@@ -358,31 +359,29 @@ When blue arrows appear, it is your opponent's turn.&nbsp;
     </div>
     <div id="solA" class="page" style="text-align: center;">
         <div id="voteDescA">
-            <h2>Voting</h2>
-            <br>
-            <b>Please examine the proposed solution below and vote whether you think it is correct.<br>
-                Remember, a correct solution is the first move that will lead to victory regardless of the other player's choice.  </b>
-            <br>
-
-            <br>
-            <b>Timer:<span id="timer1"></span></b>
-            <br>
-        </div>
-        <p><b>The Solution:</b></p>
+ 
+        
+        <p><b>The Solution:</b>
         <b>Participant chose the vertex 56</b>
         <br>
         <br>
         <b>The Explanation</b>
         <br>
-        <p>If I choose 56 they could then pick 62. After that I would have to pick 29.</p>
-<p>1. if they would pick 38, I would have to pick 41, they would have to pick 59, and I would pick 50, thus ending in a dead end and winning the game. </p>
-<p>2. if they would pick 59, I would have to pick 59, thus ending in a dead end and winning the game. </p>
-<p>3. if they would pick 35, I would have to pick 44, they would have to pick 53,<br> I would have to pick 32, they would have to pick 38, they would have to pick 38,
-I would have to pick 41, they would have to pick 59 and I would have to pick 50, thus ending in a dead end and winning the game. </p>
-<p>In all these cases I win the game, so I always win.
-</p>
-         <br>
-        <b>Your Vote</b><br>
+    </div>
+    <div style="text-align: left;">
+<p>If I choose 56, they have 3 possible paths:<p>
+<ul>
+<li>They could pick 62, then I would pick 29 and they will have 3 possible paths:<ul>
+<li>If they would pick 38, I would have to pick 41, they would have to pick 59, and I would pick 50, thus ending in a dead end and forcing a win.</li>
+<ul>If they would pick 59, from here the same like in 1.1</li>
+<li>If they would pick 35, I would have to pick 44, they would have to pick 53,I would have to pick 32, they would have to pick 38, they would have to pick 38, from here the same like in 1.1</li></li></ul>
+<li>They could pick 32, then I could pick 38, they would have to pick 41, I would pick 59, they would have to pick 50, I could pick 62, they will have to pick 29, I would have to pick 35, they would have to pick 44 and I would pick 53, thus ending the game in a dead end and forcing a win.</li>
+<li>They could pick 35, then I could pick 44, they would have to pick 47, I would pick 53, they would have to pick 32,  I could pick 38, they will have to pick 41, I would pick 59, they would 50 and I would pick 29, thus ending the game in a dead end for this path.</li></ul>
+          <br>
+      </div>
+            <b>Timer:<span id="timer1"></span></b>
+            <br>
+        <b>Your Vote: The solution is </b><br>
         <input type="radio" name="AVote" value="correct">Correct.<br>
         <input type="radio" name="AVote" value="incorrect">Incorrect<br>
     </div>
@@ -395,15 +394,10 @@ I would have to pick 41, they would have to pick 59 and I would have to pick 50,
 
     <div id="solB" class="page" style="text-align: center;">
         <div id="voteDescB">
-            <h2>Voting</h2>
-            <br>
-            <b>Please examine the proposed solution below and vote whether you think it is correct.<br>
-                Remember, a correct solution is the first move that will lead to victory regardless of the other player's choice. </b>
-            <br>
-            <b>Timer:<span id="timer2"></span></b>
-            <br>
+          
+            
         </div>
-         <p><b>The Solution:</b></p>
+         <p><b>The Solution:</b>
         <b>Participant chose the vertex 53</b>
         <br>
         <br>
@@ -420,7 +414,9 @@ By choosing 47, the opponent loses.<br>
 
 At no stage did the opponent have any choice--the game was decided entirely by my choices."</p>
         <br>
-        <b>Your Vote</b><br>
+        <b>Timer:<span id="timer2"></span></b>
+            <br>
+        <b>Your Vote: The solution is </b><br>
         <input type="radio" name="BVote" value="correct">Correct.<br>
         <input type="radio" name="BVote" value="incorrect">Incorrect<br>
     </div>
